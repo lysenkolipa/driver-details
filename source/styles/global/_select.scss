@@ -1,0 +1,63 @@
+div.selectBox {
+  width: 170px;
+  height: 28px;
+  background-color: $table-tr-hover-color;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: left;
+  line-height: 23px;
+  clear: both;
+}
+
+span.selected-option {
+  width: 90%;
+  border: none;
+  overflow: hidden;
+  background: transparent;
+  text-indent: 10px;
+  font-family: $main-ff;
+  font-size: 11px;
+  color: $main-dark-t-color;
+  font-weight: 700;
+
+}
+
+span.selectArrow,span.selected-option {
+  position: relative;
+  float: left;
+  z-index: 1;
+}
+
+ul.selectOptions {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 170px;
+  margin: 0;
+  padding-top: 2px;
+  padding-left: 0;
+  top: 30px;
+  left: 0;
+  border-radius: 5px;
+  background-color: $main-el-color;
+  list-style: none inside none;
+}
+
+li.selectOption {
+  display: block;
+  margin: 0;
+  padding: 5px 0 5px 10px;
+  line-height: 20px;
+  color: $main-t-color;
+  font-size: $s-f-size;
+  font-weight: 300;
+  font-family: $main-ff;
+  list-style: none;
+}
+
+li.selectOption:hover {
+  color: $main-dark-t-color;
+  background: $table-tr-hover-color;
+}

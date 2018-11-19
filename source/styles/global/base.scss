@@ -1,0 +1,26 @@
+body {
+  color: $main-t-color;
+  font-family: $main-ff;
+  background-color: #919eb2;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.container {
+  width: 924px;
+  margin:0 auto;
+  padding: 16px 18px 14px 20px;
+  background-color: $main-el-color;
+  border-radius: 5px;
+}

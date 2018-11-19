@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Developer's Details</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <section class="driver-details container">
+        <section class="driver-details__header">
+            <div class="driver-details__header-wrapper">
+                <h3>Driver’s Details</h3>
+                <div class="selectBox">
+                    <input type="hidden" value="value 1" class="price_values">
+                    <span class="selected-option">Unit Size, EQ/Unit</span>
+                    <img src="images/arrow.png" alt="" class="selectArrow">
+                    <ul class="selectOptions" style="display: none">
+                        <li class="selectOption" data-value="value 1">Unit Size, EQ/Unit</li>
+                        <li class="selectOption" data-value="value 2">Option2, EQ/Unit</li>
+                        <li class="selectOption" data-value="value 3">Option3, EQ/Unit</li>
+                        <li class="selectOption" data-value="value 4">Option4, EQ/Unit</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="driver-details__header-text">Click the row to view details</p>
+        </section>
+        <table class="driver-details__table">
+            <thead>
+                <tr>
+                    <th>Fact</th>
+                    <th>Metric</th>
+                    <th>2013</th>
+                    <th>2014</th>
+                    <th>2015Q</th>
+                    <th>2016Q</th>
+                    <th>2017F</th>
+                    <th>2018F</th>
+                    <th>CAGR 13/15</th>
+                    <th>CAGR 15/18</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Unit Size</td>
+                    <td>EQ/unit</td>
+                    <td>103.9</td>
+                    <td>53</td>
+                    <td>13.170</td>
+                    <td>13.170</td>
+                    <td>0.17</td>
+                    <td>49.998</td>
+                    <td>0.1%</td>
+                    <td>4.16%</td>
+                </tr>
+                <tr>
+                    <td>Unit Size - Large Packs</td>
+                    <td>EQ/unit</td>
+                    <td>103.3</td>
+                    <td>54</td>
+                    <td>12.682</td>
+                    <td>12.682</td>
+                    <td>0.166</td>
+                    <td>82.165</td>
+                    <td>0.18%</td>
+                    <td>4.74%</td>
+                </tr>
+                <tr>
+                    <td>Unit Size - Medium Packs</td>
+                    <td>EQ/unit</td>
+                    <td>115.2</td>
+                    <td>55</td>
+                    <td>12.240</td>
+                    <td>12.240</td>
+                    <td>0.163</td>
+                    <td>62.167</td>
+                    <td>0.18%</td>
+                    <td>4.74%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="container highcharts__wrapper">
+        <div class="highcharts__title">Sub-driver's dynamic</div>
+        <div class="driver-details__highcharts" id="highchart"></div>
+    </section>
+    <section class="container highcharts__wrapper">
+        <div class="highcharts__title">Sub-driver's impact</div>
+        <div class="driver-details__highcharts" id="highchart1"></div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+    <script src="https://code.highcharts.com/js/modules/exporting.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/highcharts.js"></script>
+</body>
+</html>

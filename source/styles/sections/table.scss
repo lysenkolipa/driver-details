@@ -1,0 +1,81 @@
+table {
+  width: 884px;
+  table-layout: fixed;
+  padding: 10px;
+  border-collapse: separate;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-spacing: 0;
+  font-family: $main-ff;
+  font-size: $xs-f-size;
+}
+
+th {
+  height: 32px;
+  background-color: $darker-main-el-color;
+  color: $main-t-color;
+  font-family: $main-ff;
+  font-size: $xs-f-size;
+  font-weight: 400;
+  line-height: 35.27px;
+  border-left:1px solid $main-el-color;
+  &:first-child {
+    width: 207px;
+    border-radius: 5px 0 0 5px;
+  }
+  &:last-child {
+    border-right:1px solid $darker-main-el-color;
+  }
+  &:not(:first-child) {
+    border-left: 1px solid $main-el-color;
+  }
+}
+
+tr {
+  background-color: $main-el-color;
+  &:hover {
+    background-color: $table-tr-hover-color;
+    color: $main-dark-t-color;
+    font-size: $s-f-size;
+    font-weight: 600;
+  }
+}
+td {
+  height: 24px;
+  padding: 5px;
+  border-right:1px solid $darker-main-el-color;
+  border-bottom:1px solid $darker-main-el-color;
+  &:not(:first-child) {
+    text-align: center;
+  }
+  &:first-child {
+    border-radius: 5px 0 0 5px;
+    border-right:1px solid $darker-main-el-color;
+    border-left:1px solid $darker-main-el-color;
+    border-bottom:1px solid $darker-main-el-color;
+    border-top: none;
+  }
+  &:first-child:hover{
+    background-color: $dark-el-color;
+  }
+}
+
+.selected {
+  box-sizing: border-box;
+  background-color: $table-tr-active-color;
+  color: $main-dark-t-color;
+  font-size: $m-f-size;
+  font-weight: 600;
+  &:hover {
+    background-color: $table-tr-active-color;
+  }
+  td:first-child {
+    transform: scaleX(1.1);
+    background-color: $table-tr-active-color;
+  }
+  td:first-child:hover {
+    background-color: $table-tr-active-color;
+  }
+}
+
+

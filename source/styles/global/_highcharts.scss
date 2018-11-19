@@ -1,0 +1,24 @@
+@import 'https://code.highcharts.com/css/highcharts.css';
+
+.driver-details__highcharts {
+  min-width: 310px;
+  max-width: 800px;
+}
+
+.highcharts-title tspan{
+  color: $main-t-color;
+  font-family: $main-ff;
+  font-size: $l-f-size;
+  font-weight: 700;
+}
+
+.highcharts-exporting-group {
+  display: none;
+}
+
+.highcharts-legend-box {
+  width: 100px;
+  stroke-width: .5;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  background-color: $main-el-color;
+}

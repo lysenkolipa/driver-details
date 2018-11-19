@@ -1,0 +1,56 @@
+.driver-details {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 62px;
+    padding-right: 24px;
+    color: $main-dark-t-color;
+    &-text {
+      opacity: 0.7;
+      color: $main-t-color;
+      font-family: $main-ff;
+      font-size: $xs-f-size;
+      font-weight: bold;
+      margin-right: 17%;
+    }
+    &-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+  h3 {
+    margin-right: 39px;
+  }
+}
+
+.highcharts {
+  &__wrapper {
+    display: flex;
+    height: 200px;
+    padding: 0;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: $main-el-color;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.05);
+  }
+  &__title {
+    width: 28px;
+    height: 200px;
+    margin-left: 10px;
+    -webkit-writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background-color: $middle-el-color;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    color: $main-light-t-color;
+    font-family: $main-ff;
+    font-size: $m-f-size;
+    font-weight: 600;
+    line-height: 25px;
+  }
+}
+
+
